@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EgoPoseVR</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo-small-nobg.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .image-container img {
+      max-width: 10%;
+      height: auto;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+    }
+
+    .grid-skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .grid-robustness {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .video-item {
+      text-align: center;
+    }
+
+    .video-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .hero-video-container {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    .hero-video {
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .author-block-container {
+      margin-top: 1.5rem;
+    }
+
+    .author-block {
+      margin: 0 10px;
+      white-space: nowrap;
+    }
+
+    .affiliation-block {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .contribution-block {
+      margin-top: 0.5rem;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXDZK5L5FH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXDZK5L5FH');
+</script>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              A Mixed Reality System for Robust Manikin Localization in Childbirth Training
+            </h1>
+
+
+            <div class="author-block-container is-size-5">
+              <div class="publication-authors">
+                <span class="author-block">
+                  <a href="https://aplusx.github.io/">Haojie Cheng</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <span class="author-block">
+                  <a href="https://aplusx.github.io/EgoPoseVRWeb/">Chang Liu</a><sup>1</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://www.ncis.com.sg/for-patients-and-visitors/find-a-doctor/doctor-details/abhiram-kanneganti">Abhiram Kanneganti</a><sup>1,2</sup>
+                </span>
+              </div>
+              <div class="publication-authors">
+                <span class="author-block">
+                  <a href="https://discovery.nuhs.edu.sg/2465-gosavi-arundhati-tushar">Gosavi Arundhati Tushar</a><sup>1,2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://aplusx.github.io/EgoPoseVRWeb/">Mahesh Choolani</a><sup>1,2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://cde.nus.edu.sg/edic/staff/khoo-eng-tat/">Eng Tat Khoo</a><sup>1</sup>
+                </span>
+              </div>
+
+              <div class="affiliation-block">
+                <span class="author-block"><sup>1</sup>National University of Singapore
+                 </span><br>
+                <span class="author-block"><sup>2</sup>National University Health System, Singapore</span>
+              </div>
+            </div>
+            
+
+            <div class="publication-links">
+              <!-- Paper -->
+              <span class="link-block">
+                <a href="./static/pdf/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arXiv -->
+              <span class="link-block">
+                <a href="https://www.arxiv.org/abs/2602.05590" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code -->
+              <span class="link-block">
+                <a href="https://github.com/AplusX" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Demo Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Video</h2>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe
+              src="https://www.youtube.com/watch?v=zjgArUqC7-k&t=15s"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              style="width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Abstract Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+            Opportunities for medical students to gain practical experience in vaginal births are increasingly constrained by shortened clinical rotations, patient reluctance, and the unpredictable nature of labour. To alleviate clinicians' instructional burden and enhance' learning efficiency, we introduce a mixed reality (MR) system for childbirth training that combines virtual guidance with tactile manikin interaction, thereby preserving authentic haptic feedback while enabling independent practice without continuous on-site expert supervision. The system extends the passthrough capability of commercial head-mounted displays (HMDs) by spatially calibrating an external RGB-D camera, allowing real-time visual integration of physical training objects. Building on this capability, we implement a coarse-to-fine localization pipeline that first aligns the maternal manikin with fiducial markers to define a delivery region and then registers the pre-scanned neonatal head within this area. This process enables spatially accurate overlay of virtual guiding hands near the manikin, allowing trainees to follow expert trajectories reinforced by haptic interaction. Experimental evaluations demonstrate that the system achieves accurate and stable manikin localization on a standalone headset, ensuring practical deployment without external computing resources. A large-scale user study involving 83 fourth-year medical students was subsequently conducted to compare MR-based and virtual reality (VR)-based childbirth training. Four senior obstetricians independently assessed performance using standardized criteria. Results showed that MR training achieved significantly higher scores in delivery, post-delivery, and overall task performance, and was consistently preferred by trainees over VR training. Although validated only in the context of obstetric delivery, the system demonstrates strong potential for broader manikin-based procedural training and other healthcare education scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaser Image -->
+      <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+        <div class="column is-full-width">
+          <img src="./static/images/Teaser.png" alt="Teaser Image"
+            style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <img src="./static/images/Pipeline.jpg" alt="Method Image"
+            style="width: 100%; border-radius: 10px; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Citation Section -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <pre><code>@article{cheng2026mixed,
+  title={A Mixed Reality System for Robust Manikin Localization in Childbirth Training},
+  author={Cheng, Haojie and Liu, Chang and Kanneganti, Abhiram and Choolani, Mahesh Arjandas and Gosavi, Arundhati Tushar and Khoo, Eng Tat},
+  journal={arXiv preprint arXiv:2602.05588},
+  year={2026}}
+</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is adapted from <a rel="license"
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+                International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
